@@ -1,0 +1,379 @@
+html{
+    font-family: Verdana;
+}
+.bg-dark{
+    background-color: #C0C0C0 !important;
+    
+}
+.img-container{
+    margin-left: 37.5%;
+}
+.jumbotron{
+    background-color:	#C8C8C8;
+    margin-top: 3%;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    padding: 2rem 2rem;
+}
+.jumbotron.esimene{
+    align-items: center;
+    margin-left: 23%;
+    background-color:	#C8C8C8;
+
+}
+.jumbotron.teine{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.jumbotron.success{
+    width: 40%;
+    height: 50%;
+}
+.nav-tabs .nav-link {
+    background-color: #C8C8C8;
+}
+.nav-tabs .nav-link.active{
+    
+    background-color:#d2d2d2;
+    border: none;
+}
+.radiobuttons{
+    margin-top: 4%;
+    margin-left: 7%;
+}
+
+@keyframes fade {
+    0%, 50% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+@keyframes dot-anim {
+    0% {
+        top: -4vw;
+    }
+    50% {
+        top: 4vw;
+    }
+    100% {
+        top: -4vw;
+    }
+}
+@keyframes checked-radio-3 {
+    0% {
+        top: -10vw;
+        transform: scale(0);
+    }
+    100% {
+        top: 0;
+        transform: scale(1);
+    }
+}
+@keyframes unchecked-radio-3 {
+    0% {
+        bottom: 0;
+        transform: scale(1);
+    }
+    100% {
+        bottom: -10vw;
+        transform: scale(0);
+    }
+}
+@keyframes checked-radio-4 {
+    0% {
+        transform: rotate(0) translateY(-4.8vw) scale(.2);
+    }
+    83% {
+        transform: rotate(360deg) translateY(-2.5vw) scale(1);
+        transform-origin: 2vw;
+    }
+    88% {
+        transform: translateY(.6vw) scale(1);
+    }
+    93% {
+        transform: translateY(-.9vw) scale(1);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+@keyframes unchecked-radio-4 {
+    25% {
+        top: -6.5vw;
+    }
+    50% {
+        top: 9vw;
+    }
+    75% {
+        top: -10vw;
+    }
+    100% {
+        top: -10vw;
+        transform: scale(0);
+    }
+}
+*, *:before, *:after {
+    margin: auto;
+    padding: 0;
+    outline: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+.inputGroup {
+    background-color: #C8C8C8;
+    display: block;
+    margin: 10px 0;
+    position: relative;
+  }
+  .inputGroup label {
+    padding: 12px 30px;
+    width: 100%;
+    display: block;
+    text-align: left;
+    color: #3C454C;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 200ms ease-in;
+    overflow: hidden;
+  }
+  .inputGroup label:before {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    content: '';
+    background-color: #5562eb;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%) scale3d(1, 1, 1);
+            transform: translate(-50%, -50%) scale3d(1, 1, 1);
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    z-index: -1;
+  }
+  .inputGroup label:after {
+    width: 32px;
+    height: 32px;
+    content: '';
+    border: 2px solid #D1D7DC;
+    background-color: #fff;
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
+    background-repeat: no-repeat;
+    background-position: 2px 3px;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    cursor: pointer;
+    transition: all 200ms ease-in;
+  }
+  .inputGroup input:checked ~ label {
+    color: #fff;
+  }
+  .inputGroup input:checked ~ label:before {
+    -webkit-transform: translate(-50%, -50%) scale3d(56, 56, 1);
+            transform: translate(-50%, -50%) scale3d(56, 56, 1);
+    opacity: 1;
+  }
+  .inputGroup input:checked ~ label:after {
+    background-color: #54E0C7;
+    border-color: #54E0C7;
+  }
+  .inputGroup input {
+    width: 32px;
+    height: 32px;
+    order: 1;
+    z-index: 2;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    cursor: pointer;
+    visibility: hidden;
+  }
+  
+  .holo {
+    overflow: hidden;
+    position: absolute;
+    right: 35px;
+    width: 90px;
+    height: 60px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #e59f2d 0%, #ffea30 25%, #ff8528 71%, #ffdd89 100%);
+  }
+  
+  .line {
+    margin: -20px;
+    width: 90px;
+    height: 50px;
+    border: 2px solid #ff8528;
+    border-radius: 4px;
+  }
+  .line:nth-child(2) {
+    margin: -40px;
+  }
+  .line:nth-child(3) {
+    margin: 10px 20px;
+  }
+  
+  .face {
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    width: 500;
+    height: 300px;
+    border-radius: 15px;
+    background: white;
+    padding: 35px 30px;
+    -webkit-transform: rotateY(-15deg);
+            transform: rotateY(-15deg);
+    transition: all 0.3s;
+  }
+  .face img {
+    display: block;
+    width: 100px;
+  }
+  .face:hover {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  
+  #number {
+    margin: 90px 0 40px;
+    position: relative;
+    display: inline-block;
+  }
+  #number:before {
+    position: absolute;
+    font-size: 10px;
+    top: -20px;
+    content: "card number";
+  }
+  #number input {
+    font-size: 30px;
+    width: 90px;
+    outline: none;
+    border: none;
+  }
+  
+  #holder {
+    position: relative;
+    display: block;
+  }
+  #holder:before {
+    position: absolute;
+    font-size: 10px;
+    top: -20px;
+    content: "cardholder";
+  }
+  #holder input {
+    font-size: 26px;
+    width: 260px;
+    outline: none;
+    border: none;
+    float: left;
+    margin-right: 16px;
+    text-transform: uppercase;
+  }
+  
+  #date {
+    position: relative;
+    display: block;
+  }
+  #date span {
+    float: left;
+    font-size: 26px;
+    opacity: 0.4;
+    margin-right: 4px;
+  }
+  #date:before {
+    position: absolute;
+    font-size: 10px;
+    top: -20px;
+    content: "valid date";
+  }
+  #date input {
+    font-size: 26px;
+    width: 40px;
+    outline: none;
+    float: left;
+    border: none;
+    text-transform: uppercase;
+  }
+  
+  
+  #cvv {
+    position: absolute;
+    top: 220px;
+    right: 35px;
+  }
+  #cvv span {
+    font-size: 26px;
+  }
+  #cvv input {
+    font-size: 26px;
+    width: 60px;
+    outline: none;
+    border: none;
+    background: transparent;
+    text-transform: uppercase;
+  }
+  
+  #cardline {
+    width: 160%;
+    height: 60px;
+    opacity: 0.8;
+    background: black;
+  }
+  
+  .sumbit {
+    position: absolute;
+    top: 460px;
+    left: 100px;
+    border: none;
+    outline: none;
+    background: #69ffc8;
+    width: 200px;
+    height: 80px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    transition: all 0.3s;
+  }
+  .sumbit:hover {
+    background: #00f0ff;
+    -webkit-transform: rotateY(15deg);
+            transform: rotateY(15deg);
+  }
+  
+  input[type=checkbox] {
+    display: none;
+  }
+  
+  /* to hide the checkbox itself */
+  input[type=checkbox] + label:before {
+    cursor: pointer;
+    opacity: 0.4;
+    font-family: FontAwesome;
+    display: inline-block;
+    font-size: 22px;
+    content: "\f070";
+    color: black;
+    transition: all 0.2s;
+  }
+  
+  /* checked icon */
+  input[type=checkbox]:checked + label:before {
+    content: "\f06e";
+    opacity: 1;
+    color: #ff8528;
+  }
