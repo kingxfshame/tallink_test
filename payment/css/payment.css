@@ -1,8 +1,11 @@
 html{
     font-family: Verdana;
 }
+body{
+  background-color: 	#DCDCDC;
+}
 .bg-dark{
-    background-color: #C0C0C0 !important;
+    background-color: #D3D3D3 !important;
     
 }
 .img-container{
@@ -13,6 +16,9 @@ html{
     margin-top: 3%;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     padding: 2rem 2rem;
+}
+.col-md-12{
+  text-align: center;
 }
 .jumbotron.esimene{
     align-items: center;

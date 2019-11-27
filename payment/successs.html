@@ -13,9 +13,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="img-container">
-                <img src="img/logo.png" width="450vh" height="60vh" class="d-inline-block align-top" alt="">
-        </div>
+                <img src="img/logo.png" style="align-items: center;" width="600vh" height="100vh" class="d-inline-block align-top" alt="">
 
     </nav>
     <div class="container">
@@ -23,22 +21,37 @@
                 <div class="jumbotron success">
                         <h1 style="text-align: center;">Täname!</h1>
                 </div>
-                <div class="col-12">
+                <div class="col-md-12">
                     <h3 style="text-align: center;">BRONEERINGU KINNITUS</h3>
                 </div>
-                <div class="col-12" style="text-align: center;">
+                <div class="col-md-12" style="text-align: center;">
                     Broneeringu eest on tasutud.
                     <br>
                     Soovime teile meeldivat merereisi!
                 </div>
-                <div class="col-12" style="margin-top:2%;">
-                        <div class="card border-dark mb-3" style="max-width: 18rem;">
-                                <div class="card-header" id="makstud">Makstud</div>
+                <div class="col-md-12" style="margin-top:2%;">
+                        <div class="card border-dark mb-3" style="max-width: 25rem;">
+                                <div class="card-header" id="makstud"></div>
                                 <div class="card-body text-dark">
-                                  <h5 class="card-title">Dark card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <h5 class="card-title" id="price" style="text-align: center;"></h5>
+                                  <p class="card-text ">Broneeringu number: <a href="#" id="broneeringu_number" class="text-success">12345678</a> </p>
+                                  <p class="card-text">Turvanumber Self-Checkini: <a href="#" id="turvanumber" class="text-success">1234</a> </p>
                                 </div>
                         </div>
+                </div>
+                <div class="col-md-12">
+                    <form action="#">
+                        <h5>Saada/Jaga kinnitust (PDF) emailiga</h5>
+                        <div class="form-group col-6">
+                            <label for="exampleFormControlInput1">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            
+                        </div>
+                        <div class="col-6">
+                            <button type="button" class="btn btn-outline-success" style="width: 15rem;font-size: 20px;">Check In <i class="fa fa-envelope" aria-hidden="true"></i></button>
+                        </div>
+
+                    </form>
                 </div>
         </div>
     </div>

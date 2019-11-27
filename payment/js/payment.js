@@ -57,6 +57,7 @@ $("#number input").keyup(function () {
   });
 
 function loadEventListener(){
+    sessionStorage.setItem('price', price);
     online_pangad.bind('click', function() {
         const radio_checked = $('input[name=radio]:checked', 
         '#onlinepangad').val();
@@ -65,7 +66,9 @@ function loadEventListener(){
         }
         else{
             sessionStorage.setItem('pay_buy', 'online');
-
+            sessionStorage.setItem('bank', $('input[name=radio]:checked', 
+            '#onlinepangad').val());
+            window.location.replace("successs.html");
         }
       });
       kredit_card.bind('click', function() {
@@ -91,10 +94,11 @@ function loadEventListener(){
             error = "Check the correctness of the entered card CVV";
         }
         if(error == ""){
-
+            sessionStorage.setItem('pay_buy', 'credit');
+            window.location.replace("successs.html");
         }
         else{
-            sessionStorage.setItem('pay_buy', 'credit');
+            
 
             alert(error);
         }
